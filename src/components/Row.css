@@ -1,0 +1,29 @@
+.row{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+::-webkit-scrollbar{        /* css ile scrollbar kalayan */
+    display: none;
+}
+.movies-row{
+    display: flex;           /*  same row il image display chyn vndi */
+    overflow-x: scroll;       /* scrollbar illathe x directionilot scroll chyn  */
+    margin-top: 20px;
+}
+
+.movie{
+    width: 100%;
+    max-height: 220px;
+    margin-right: 20px;
+     object-fit: contain;                        /* hover chyumbo image athil thanne ninn hover chyn */
+    transition: transform 460ms;                  /*  hover speed set chyn*/
+}
+
+.movie:hover{
+    transform: scale(1.06);                /* ethrem hover chynm enn set chyn  */
+}
+
+.movie-poster{
+    max-height: 400px;
+}
